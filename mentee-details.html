@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no">
+    
+    <meta name="theme-color" content="#98A59B">
+
+    <title>8B Ladder</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    
+    <link rel="icon" href="img/" sizes="16x16 32x32 48x48 64x64">
+        
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+    
+  
+</head>
+
+<body>
+    
+    
+
+    
+    
+    <!-- ***** mentee-details-section Start ***** -->
+    
+    
+        <section class="section-style wizerd-section mentee-details-section p-3-3 wave-section">
+    
+            <div class="container">
+            
+                <div class="details-tabs-container">
+                
+                    <div class="wizerd-tabs">
+                    
+                        <button class="tab-item tab-btn title-22-18 active " type="button" data-target="mentee_personal_details">
+                        
+                            <span class="tab-num marign-span">
+                                
+                                1
+                                
+                                
+
+                            </span>
+                            <span class="tab-done marign-span"><i class="fa-solid fa-check"></i></span>
+                            <span class="tab-text">
+                            
+                                Personal Information
+                            </span>
+                            
+                        </button>
+                        <button class="tab-item tab-btn title-22-18 " type="button" data-target="mentee_academic_and_professionals">
+                        
+                            <span class="tab-num marign-span">2</span>
+                            <span class="tab-done marign-span"><i class="fa-solid fa-check"></i></span>
+                            <span class="tab-text">
+                            
+                                 Academic & Professional
+                            </span>
+                            
+                        </button>
+                        <button class="tab-item tab-btn title-22-18  " type="button" data-target="mentee_ambition">
+                        
+                            <span class="tab-num marign-span">3</span>
+                            <span class="tab-done marign-span"><i class="fa-solid fa-check"></i></span>
+                            <span class="tab-text">
+                            
+                               Ambition Preferences
+                                
+                            </span>
+                            
+                        </button>
+                    
+                    </div>
+                    <div class="tabs-content-container">
+                    
+                        <div class="details-item tab-content personal-details-tab active " id="mentee_personal_details">
+                        
+                            <div class="form-wrap">
+                            
+                                <form class="personal-details-form" action="#">
+                                
+                                    <div class="row">
+                                    
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Add Photo(jpg & png)</label>
+                                                <div class="photo-upload-wrap">
+                                            
+                                                    <div class="upload-area title-18-16">
+
+                                                        <div class="upload-text">Drag & Drop files here to upload</div>
+
+                                                        <label for="upload_input" class="upload-btn" type="button">Browse files</label>
+
+                                                        <input type="file" id="upload_input" hidden>
+
+                                                    </div>
+
+                                                </div>   
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" placeholder="Jane">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Doe">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" placeholder="Jane">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group date-input datepicker">
+                                            
+                                                <label for="" class="form-label">Birthday </label>
+                                                <input type="text" class="form-control">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Nationality</label>
+                                                <select class="form-select" aria-label="Nationality">
+                                                  <option selected>German</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Primary Citizenship</label>
+                                                <select class="form-select" aria-label="Primary-Citizenship">
+                                                  <option selected>German</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group select2_style select2_multiple">
+                                            
+                                                <label for="" class="form-label">Language Spoken</label>
+                                                <select class="form-select" aria-label="Language-Spoken" multiple>
+                                                  <option value="1">German</option>
+                                                  <option value="2">English</option>
+                                                  <option value="3">Arabic</option>
+                                                </select>
+                                                    
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Gender</label>
+                                                <select class="form-select" aria-label="Gender">
+                                                    
+                                                  <option selected>male</option>
+                                                  <option value="1">famale</option>
+                                                 
+                                                </select>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">What issues are you passionate about?</label>
+                                                <select class="form-select" aria-label="issues">
+                                                        
+                                                  <option value="1">SDG 1</option>
+                                                  <option value="2">SDG 2</option>
+                                                  <option value="3">SDG 3</option>
+                                                  <option value="4">SDG 4</option>
+                                                    
+                                                    
+                                                   
+                                                </select>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">LinkedIn</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Youtube</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Medium</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Facebook</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label for="" class="form-label">Personal Website</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                            </div>
+                                        
+                                        </div>
+                                       
+                                        <div class="col-12">
+                                        
+                                            <div class="wizerd-btn-wrap">
+                                            
+                                                <button class="wizerd-btn wizerd-next-btn btn-style" type="submit">Continue </button>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                
+                                </form>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="details-item tab-content academic-professionals-tab " id="mentee_academic_and_professionals">
+                        
+                             <div class="form-wrap custom-container">
+                            
+                                <form class="academic-professionals-form" action="#">
+                                
+                                    <div class="row">
+                                    
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group centered-check">
+                                            
+                                                <label  class="form-label pb-more">I am currently enrolled in school</label>
+                                                <div class="question-wrap">
+                                                
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault" id="answer1">
+                                                      <label class="form-check-label" for="answer1">
+                                                        Yes
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault" id="answer2">
+                                                      <label class="form-check-label" for="answer2">
+                                                        No
+                                                      </label>
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12 ">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label pb-more">I attended the following High School</label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here" value="test1">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Remove</button>
+                                                    
+                                                    </div>
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here" value="test2">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Remove</button>
+                                                    
+                                                    </div>
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label pb-more">
+                                                    I am attending/have attended the following undergraduate 
+                                                    institution(s)
+                                                </label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label pb-more">
+                                                    I have worked at the following companies (Internships Included)
+                                                </label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        
+                                            <div class="wizerd-btn-wrap">
+                                            
+                                                <button class="wizerd-btn wizerd-next-btn btn-style disabled" type="submit">Continue </button>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </form>
+                            
+                            </div>
+                        
+                        
+                        </div>
+                        
+                        <div class="details-item tab-content ambition-tab " id="mentee_ambition">
+                        
+                            <div class="form-wrap custom-container">
+                            
+                                <form class="academic-professionals-form" action="#">
+                                
+                                    <div class="row">
+                                    
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group centered-check">
+                                            
+                                                <label  class="form-label pb-more">I have an offer from a global university</label>
+                                                <div class="question-wrap">
+                                                
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault2" id="answer3">
+                                                      <label class="form-check-label" for="answer3">
+                                                        Yes
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault2" id="answer4">
+                                                      <label class="form-check-label" for="answer4">
+                                                        No
+                                                      </label>
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12">
+                                            
+                                                <div class="form-group ">
+
+                                                    <label for="" class="form-label">I am interested in studying </label>
+                                                    <select class="form-select" aria-label="interested-studying" >
+
+                                                      <option selected>Geo-dropdown</option>
+                                                      <option value="1">Geo-dropdown</option>
+
+                                                    </select>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                                                                        
+                                                <div class="form-group select2_style select2_multiple">
+
+                                                    <label for="" class="form-label">I am interested in studying </label>
+                                                    <select class="form-select" aria-label="fields-studying" multiple>
+
+                                                      <option selected>Fields of Study Dropdown</option>
+                                                      <option value="1">Fields of Study Dropdown</option>
+
+                                                    </select>
+                                                </div>
+
+                                            
+                                        </div>
+                                        <div class="col-12">
+                                        
+                                            <div class="wizerd-btn-wrap">
+                                            
+                                                <button class="wizerd-btn wizerd-next-btn btn-style " type="submit">Finish </button>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            
+                            </div>
+                        
+                        
+                        </div>
+                        
+                        
+                    
+                    </div>  
+                </div>
+            
+            </div>
+                
+            <img  class="img-fluid wave-vector d-none" src="img/wave-left.svg">
+        </section>
+    
+    
+    <!-- ***** mentee-personal-details-section End ***** -->
+    
+    
+    
+    
+    
+    <!-- jquery 3.5.1   -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+     <!-- bootstrap v5.2  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     
+    <!-- matchHeight jquery plugin   -->
+    <script src="js/jquery.matchHeight-min.js"></script>
+    
+    <!-- select2 plugin   -->
+    <script src="js/select2.min.js"></script>
+    
+    
+    <!-- bootstrap-datepicker js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+          
+    <!-- main style js   -->
+    <script src="js/main.js"></script>
+   
+    <script>
+    
+        $('.select2_multiple select').select2();
+        $(function () {
+        $(".datepicker input").datepicker({ 
+                autoclose: true,
+                todayHighlight: false,
+                orientation: 'left bottom'
+          })
+        });
+    
+    </script>
+    
+    
+</body>
+
+</html>

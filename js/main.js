@@ -21,3 +21,31 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+
+/*------------- #tabs function   --------------*/
+
+$(".tab-content").hide();
+$(".tab-content.active").show();
+
+$(".tab-btn").click(function(){
+  
+        $(".tab-btn").removeClass("active");
+        $(this).addClass("active");
+
+        var current_tab = $(this).attr("data-target");
+        $(".tab-content").hide();
+        $("#"+current_tab).fadeIn();
+    
+        
+    });
+
+/*------------- #wizerd-section   --------------*/
+
+
+
+
+
+
+
+
