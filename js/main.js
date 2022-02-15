@@ -40,7 +40,20 @@ $(".tab-btn").click(function(){
         
     });
 
-/*------------- #wizerd-section   --------------*/
+/*------------- #loading-overlay-btn function --------------*/
+
+function loading_overlay (){
+    
+    
+    btn = $(this);
+    btn.addClass('loading-overlay');
+    setTimeout(function() {
+      btn.removeClass('loading-overlay');
+    }, 1000);
+    
+}
+
+$('.loading-btn').click(loading_overlay);
 
 
 
