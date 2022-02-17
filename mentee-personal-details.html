@@ -21,7 +21,7 @@
     <link rel="icon" href="img/" sizes="16x16 32x32 48x48 64x64">
         
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
-
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
         
     
@@ -34,10 +34,10 @@
 
     
     
-    <!-- ***** mentor-details-section Start ***** -->
+    <!-- ***** mentee-details-section Start ***** -->
     
     
-        <section class="section-style wizerd-section mentor-details-section p-3-3 wave-section">
+        <section class="section-style wizerd-section mentee-details-section p-3-3 wave-section">
     
             <div class="container">
             
@@ -45,7 +45,7 @@
                 
                     <div class="wizerd-tabs">
                     
-                        <button class="tab-item active" type="button" data-target="mentor_personal_details">
+                        <button class="tab-item active" type="button" data-target="mentee_personal_details">
                         
                             <span class="tab-num marign-span">
                                 
@@ -61,23 +61,23 @@
                             </span>
                             
                         </button>
-                        <button class="tab-item" type="button" data-target="mentor_experience">
+                        <button class="tab-item " type="button" data-target="mentee_academic_and_professionals">
                         
                             <span class="tab-num marign-span">2</span>
                             <span class="tab-done marign-span"><i class="fa-solid fa-check"></i></span>
                             <span class="tab-text">
                             
-                                 Experience
+                                 Academic & Professional
                             </span>
                             
                         </button>
-                        <button class="tab-item" type="button" data-target="mentorship_preferences">
+                        <button class="tab-item " type="button" data-target="mentee_ambition">
                         
                             <span class="tab-num marign-span">3</span>
                             <span class="tab-done marign-span"><i class="fa-solid fa-check"></i></span>
                             <span class="tab-text">
                             
-                               Mentorship Preferences
+                               Ambition Preferences
                                 
                             </span>
                             
@@ -86,7 +86,7 @@
                     </div>
                     <div class="tabs-content-container">
                     
-                        <div class="details-item  personal-details-tab" id="mentor_personal_details">
+                        <div class="details-item  personal-details-tab " id="mentee_personal_details">
                         
                             <div class="form-wrap">
                             
@@ -121,47 +121,38 @@
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">First Name</label>
                                                 <input type="text" class="form-control" placeholder="Jane">
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Last Name</label>
                                                 <input type="text" class="form-control" placeholder="Doe">
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Jane">
+                                                <input type="email" class="form-control" placeholder="Email Here">
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Birthday </label>
                                                 <input type="date" class="form-control">
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Nationality</label>
                                                 <select class="form-select" aria-label="Nationality">
@@ -171,12 +162,10 @@
                                                   <option value="3">Three</option>
                                                 </select>
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Primary Citizenship</label>
                                                 <select class="form-select" aria-label="Primary-Citizenship">
@@ -186,12 +175,11 @@
                                                   <option value="3">Three</option>
                                                 </select>
 
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group select2_style select2_multiple">
+                                            <div class="select2_style select2_multiple">
                                             
                                                 <label for="" class="form-label">Language Spoken</label>
                                                 <select class="form-select" aria-label="Language-Spoken" multiple>
@@ -205,7 +193,6 @@
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
                                                 <label for="" class="form-label">Gender</label>
                                                 <select class="form-select" aria-label="Gender">
@@ -214,16 +201,13 @@
                                                   <option value="1">famale</option>
                                                  
                                                 </select>
-                                            </div>
                                         
                                         </div>
+                                        <div class="col-12">
                                         
-                                        <div class="col-md-6">
-                                        
-                                            <div class="form-group">
                                             
-                                                <label for="" class="form-label">I am </label>
-                                                <select class="form-select" aria-label="">
+                                                <label for="" class="form-label">What issues are you passionate about?</label>
+                                                <select class="form-select" aria-label="issues">
                                                         
                                                   <option value="1">SDG 1</option>
                                                   <option value="2">SDG 2</option>
@@ -233,34 +217,49 @@
                                                     
                                                    
                                                 </select>
-                                            </div>
                                         
                                         </div>
                                         <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
-                                                <label for="" class="form-label">Years of experience </label>
-                                                <input type="number" class="form-control" placeholder="Enter experience" inputmode="tel">
+                                                <label for="" class="form-label">LinkedIn</label>
+                                                <input type="url" class="form-control" placeholder="Link">
 
-                                            </div>
                                         
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-md-6">
                                         
-                                            <div class="form-group">
                                             
-                                                <label for="" class="form-label">
-                                                
-                                                    My story (A brief summary about you to help others know who you 
-                                                    are and your achievements)
-                                                
-                                                </label>
-                                                <textarea class="form-control" placeholder=""></textarea>
-                                            </div>
+                                                <label for="" class="form-label">Youtube</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
                                         
                                         </div>
+                                        <div class="col-md-6">
                                         
+                                            
+                                                <label for="" class="form-label">Medium</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            
+                                                <label for="" class="form-label">Facebook</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                        
+                                        </div>
+                                        <div class="col-md-6">
+                                        
+                                            
+                                                <label for="" class="form-label">Personal Website</label>
+                                                <input type="url" class="form-control" placeholder="Link">
+
+                                        
+                                        </div>
+                                       
                                         <div class="col-12">
                                         
                                             <div class="wizerd-btn-wrap">
@@ -279,9 +278,10 @@
                         
                         </div>
                         
-                        <div class="details-item  experience-tab" id="mentor_experience">
+                        <!--
+                        <div class="details-item  academic-professionals-tab d-none " id="mentee_academic_and_professionals">
                         
-                             <div class="form-wrap custom-container">
+                             <div class="form-wrap custom-container form-centered-check ">
                             
                                 <form class="academic-professionals-form" action="#">
                                 
@@ -289,129 +289,122 @@
                                     
                                         <div class="col-12">
                                         
-                                            <div class="form-group">
+                                            <div class="form-group ">
                                             
-                                                <label for="" class="form-label">I want to </label>
-                                                <select class="form-select" aria-label="">
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="col-12">
-                                        
-                                            <div class="form-group select2_style select2_multiple">
-                                            
-                                                <label for="" class="form-label">
+                                                <label  class="form-label pb-more">I am currently enrolled in school</label>
+                                                <div class="question-wrap">
                                                 
-                                                    I have attended the following schools (you can choose more than one
-                                                    or add if you do not find your school)
-                                                
-                                                </label>
-                                                <select class="form-select" aria-label="" multiple>
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
-                                        </div>
-                                        <div class="col-12">
-                                        
-                                            <div class="form-group select2_style select2_multiple">
-                                            
-                                                <label for="" class="form-label">
-                                                
-                                                    I have worked for the following companies (you can choose more than one)
-                                                
-                                                </label>
-                                                <select class="form-select" aria-label="" multiple>
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="col-12">
-                                        
-                                            <div class="form-group">
-                                            
-                                                <label for="" class="form-label">
-                                                
-                                                    I care about the following issues
-                                                
-                                                </label>
-                                                <select class="form-select" aria-label="">
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
-                                        </div>
-                                        <div class="col-12">
-                                        
-                                            <div class="form-group">
-                                            
-                                                <label for="" class="form-label">
-                                                
-                                                    I have the following hobbies
-                                                
-                                                </label>
-                                                <select class="form-select" aria-label="">
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
-                                        </div>
-                                        <div class="col-12">
-                                        
-                                            
-                                                <label for="" class="form-label">
-                                                
-                                                    Upload CV
-                                                
-                                                </label>
-                                                <div class="upload-cv-wrap">
-                                                
-                                                    <button type="button" class="fileup-btn">
-                                                    
-                                                        <input type="file" name="file" id="upload_cv" accept="application/pdf" required="" aria-required="true" class="valid" aria-invalid="false">
-                                                    
-                                                        <span class="upload-text">Choose file</span>
-                                                        <span class="file-name" id="file_name">CV.pdf</span>
-                                                    
-                                                    </button>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault" id="answer1">
+                                                      <label class="form-check-label" for="answer1">
+                                                        Yes
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault" id="answer2">
+                                                      <label class="form-check-label" for="answer2">
+                                                        No
+                                                      </label>
+                                                    </div>
                                                 
                                                 </div>
-                                                                                        
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12 ">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label pb-more">I attended the following High School</label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here" value="test1">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Remove</button>
+                                                    
+                                                    </div>
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here" value="test2">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Remove</button>
+                                                    
+                                                    </div>
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label">
+                                                    I am attending/have attended the following undergraduate 
+                                                    institution(s)
+                                                </label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                        
+                                            <div class="form-group">
+                                            
+                                                <label  class="form-label ">
+                                                    I have worked at the following companies (Internships Included)
+                                                </label>
+                                                <div class="add-item-wrap">
+                                                
+                                                    <div class="added-item">
+                                                    
+                                                         <div class="input-text">
+                                                        
+                                                              <input type="text" class="form-control" placeholder="Add text here">
+                                                        
+                                                         </div>
+                                                         <button class="add-btn btn-style" type="button">Add</button>
+                                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
                                         </div>
                                         
                                         <div class="col-12">
@@ -433,9 +426,9 @@
                         
                         </div>
                         
-                        <div class="details-item  mentorship-preferences-tab" id="mentorship_preferences">
+                        <div class="details-item  ambition-tab d-none " id="mentee_ambition">
                         
-                            <div class="form-wrap">
+                            <div class="form-wrap custom-container form-centered-check">
                             
                                 <form class="academic-professionals-form" action="#">
                                 
@@ -443,47 +436,58 @@
                                     
                                         <div class="col-12">
                                         
-                                            <div class="form-group select2_style select2_multiple">
+                                            <div class="form-group">
                                             
-                                                <label for="" class="form-label">
+                                                <label  class="form-label ">I have an offer from a global university</label>
+                                                <div class="question-wrap">
                                                 
-                                                    I can mentor in the following areas (you can choose more than one)
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault2" id="answer3">
+                                                      <label class="form-check-label" for="answer3">
+                                                        Yes
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="questionRadioDefault2" id="answer4">
+                                                      <label class="form-check-label" for="answer4">
+                                                        No
+                                                      </label>
+                                                    </div>
                                                 
-                                                </label>
-                                                <select class="form-select" aria-label="" multiple>
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
+                                                </div>
+                                            
                                             </div>
                                         
                                         </div>
                                         <div class="col-12">
-                                        
-                                            <div class="form-group select2_style select2_multiple">
                                             
-                                                <label for="" class="form-label">
-                                                
-                                                    I need a mentor in the following areas (you can choose more than one)
-                                                
-                                                </label>
-                                                <select class="form-select" aria-label="" multiple>
-                                                        
-                                                  <option value="1">Select One</option>
-                                                  <option value="2">Select One</option>
-                                                  <option value="3">Select One</option>
-                                                    
-                                                    
-                                                   
-                                                </select>
-                                            </div>
-                                        
+                                                <div class="form-group ">
+
+                                                    <label for="" class="form-label">I am interested in studying </label>
+                                                    <select class="form-select" aria-label="interested-studying" >
+
+                                                      <option selected>Geo-dropdown</option>
+                                                      <option value="1">Geo-dropdown</option>
+
+                                                    </select>
+                                                </div>
+                                            
                                         </div>
-                                        
+                                        <div class="col-12">
+                                                                                        
+                                                <div class="select2_style select2_multiple">
+
+                                                    <label for="" class="form-label">I am interested in studying </label>
+                                                    <select class="form-select" aria-label="fields-studying" multiple>
+
+                                                      <option selected>Fields of Study Dropdown</option>
+                                                      <option value="1">Fields of Study Dropdown</option>
+
+                                                    </select>
+                                                </div>
+
+                                            
+                                        </div>
                                         <div class="col-12">
                                         
                                             <div class="wizerd-btn-wrap">
@@ -501,7 +505,7 @@
                         
                         
                         </div>
-                        
+                        -->
                         
                     
                     </div>  
@@ -530,14 +534,14 @@
     
     <!-- select2 plugin   -->
     <script src="js/select2.min.js"></script>
-    
+           
     <!-- main style js   -->
     <script src="js/main.js"></script>
    
     <script>
     
         $('.select2_multiple select').select2();
-       
+        
     
     </script>
     

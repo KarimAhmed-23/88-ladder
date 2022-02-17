@@ -1,14 +1,21 @@
 :root{
     
      --clr-1:#98A59B;
+    
      --clr-2:#B3FFE8;
      --clr-2-hover:#93d4c0;
+    
      --clr-3:rgb(0 0 0 / 42%);
-     --clr-4:/*#87cac5*/ #63C797;
-     --clr-4-hover: #759a97;
+    
+     --clr-4:#63C797;
+     --clr-4-hover: #3d9a6d;
+    
      --clr-5:#BDE6E3;
+     --clr-5-hover:#93cac6;
+    
      --clr-text1:#71717A;
      --clr-text2:#979797;
+    
      --clr-input-border:#63C797;
     
 }

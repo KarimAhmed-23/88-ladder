@@ -57,6 +57,48 @@ $('.loading-btn').click(loading_overlay);
 
 
 
+/*------------- #hide and show fitler-sidebar using active class by clicking button  --------------*/   
+
+
+$("#sidebar_toggle").click(function(){
+        
+        $('.fitler-sidebar').addClass('active');
+		$('.sidebar-overlay').addClass('active')
+		
+  });
+
+$(".sidebar-overlay , .close-sidebar ").click(function(){
+        
+        $('.fitler-sidebar').removeClass('active');
+		$('.sidebar-overlay').removeClass('active');
+		
+  });
+
+/*------------- #active added --------------*/
+
+
+$('.active-add').on("click" , function(){
+    
+    $(this).addClass('active');
+});
+$('.active-toggle').on("click" , function(){
+    
+    $(this).toggleClass('active');
+});
+$('.more-text-btn').on("click" , function(){
+    
+    $(this).toggleClass("active");
+    $(this).parent().find('.more-text').toggleClass('active');
+    
+    if($(this).hasClass("active")){
+        
+        $(this).text("Show Less");
+    }else{
+        
+        $(this).text("Show More");
+    }
+    
+})
 
 
 

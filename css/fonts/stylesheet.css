@@ -1,4 +1,69 @@
 @font-face {
+    font-family: 'Oswald-Regular';
+    src: url('Oswald-Regular.eot');
+    src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Regular.woff2') format('woff2'),
+        url('Oswald-Regular.woff') format('woff'),
+        url('Oswald-Regular.ttf') format('truetype'),
+        url('Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('Avenir-Roman.eot');
+    src: local('Avenir Roman'), local('Avenir-Roman'),
+        url('Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Roman.woff2') format('woff2'),
+        url('Avenir-Roman.woff') format('woff'),
+        url('Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('Avenir-Black.eot');
+    src: local('Avenir Black'), local('Avenir-Black'),
+        url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Black.woff2') format('woff2'),
+        url('Avenir-Black.woff') format('woff'),
+        url('Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('Avenir-Medium.eot');
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Medium.woff2') format('woff2'),
+        url('Avenir-Medium.woff') format('woff'),
+        url('Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('Avenir-Heavy.eot');
+    src: local('Avenir Heavy'), local('Avenir-Heavy'),
+        url('Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Heavy.woff2') format('woff2'),
+        url('Avenir-Heavy.woff') format('woff'),
+        url('Avenir-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+@font-face {
     font-family: 'Oswald';
     src: url('Oswald-Bold.eot');
     src: url('Oswald-Bold.eot?#iefix') format('embedded-opentype'),
@@ -12,7 +77,7 @@
 }
 
 @font-face {
-    font-family: 'Oswald';
+    font-family: 'Oswald-Light';
     src: url('Oswald-Light.eot');
     src: url('Oswald-Light.eot?#iefix') format('embedded-opentype'),
         url('Oswald-Light.woff2') format('woff2'),
@@ -25,7 +90,7 @@
 }
 
 @font-face {
-    font-family: 'Oswald';
+    font-family: 'Oswald-ExtraLight';
     src: url('Oswald-ExtraLight.eot');
     src: url('Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
         url('Oswald-ExtraLight.woff2') format('woff2'),
@@ -38,7 +103,7 @@
 }
 
 @font-face {
-    font-family: 'Oswald';
+    font-family: 'Oswald-Medium';
     src: url('Oswald-Medium.eot');
     src: url('Oswald-Medium.eot?#iefix') format('embedded-opentype'),
         url('Oswald-Medium.woff2') format('woff2'),
@@ -63,16 +128,4 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Oswald-Regular';
-    src: url('Oswald-Regular.eot');
-    src: url('Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Oswald-Regular.woff2') format('woff2'),
-        url('Oswald-Regular.woff') format('woff'),
-        url('Oswald-Regular.ttf') format('truetype'),
-        url('Oswald-Regular.svg#Oswald-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
