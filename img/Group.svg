@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="146" height="138.682" viewBox="0 0 146 138.682">
+  <g id="Group" transform="translate(0 -3.659)">
+    <g id="icon_14_">
+      <path id="Vector" d="M126.423,14.633H57.913a8.261,8.261,0,0,1-6.025-2.61l-8.83-9.414A8.261,8.261,0,0,0,37.023,0H8.262A8.262,8.262,0,0,0,0,8.262V100.4a8.271,8.271,0,0,0,8.271,8.271H126.407a8.271,8.271,0,0,0,8.271-8.271V22.895a8.262,8.262,0,0,0-8.255-8.262Z" transform="translate(4.999 33.668)" fill="#bde6e3"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H100.406V89.9H0Z" transform="translate(24.773 3.659)" fill="#dbd8dd"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H97.348V86.845H0Z" transform="translate(19.503 12.006)" fill="#eeefee"/>
+      <g id="Group-2" data-name="Group">
+        <path id="Vector-4" data-name="Vector" d="M0,0H75.337V3.953H0Z" transform="translate(30.51 23.049)" fill="#dbd8dd"/>
+        <path id="Vector-5" data-name="Vector" d="M0,0H75.337V3.953H0Z" transform="translate(30.51 35.606)" fill="#dbd8dd"/>
+        <path id="Vector-6" data-name="Vector" d="M0,0H75.337V3.953H0Z" transform="translate(30.51 48.162)" fill="#dbd8dd"/>
+      </g>
+      <path id="Vector-7" data-name="Vector" d="M137.742,0H62.9a8.263,8.263,0,0,0-6.015,2.6l-8.833,9.378a8.262,8.262,0,0,1-6.015,2.6H8.262A8.262,8.262,0,0,0,0,22.835q0,.377.034.752L4.307,73.264a8.271,8.271,0,0,0,8.237,7.519H132.126a8.271,8.271,0,0,0,8.237-7.521l5.6-64.248A8.262,8.262,0,0,0,138.491.034Q138.117,0,137.742,0Z" transform="translate(0 61.555)" fill="#bde6e3"/>
+    </g>
+  </g>
+</svg>

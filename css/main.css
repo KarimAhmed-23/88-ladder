@@ -166,6 +166,18 @@ a , a:hover{
     text-align: center;
     
 }
+
+.btn-style.small-p{
+    
+    padding: .5rem 1rem;
+}
+ 
+.btn-style.large-200{
+    
+        width: 100%;
+        max-width: 200px;
+}
+
 .btn-style:hover,
 .btn-style:focus{
     
@@ -1330,7 +1342,7 @@ select{
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     border: 1px dashed var(--clr-4);
     outline: none;
     padding: .5rem .25rem ;
@@ -1356,11 +1368,10 @@ select{
     border-radius: 8px;
 }
 
-.details-tabs-container .tabs-content-container .details-item .form-wrap .upload-cv-wrap .fileup-btn span{
+.details-tabs-container .tabs-content-container .details-item .form-wrap .upload-cv-wrap .fileup-btn div{
     
     display: inline-block;
     margin: .25rem .5rem;
-    font-size: 18px;
     color: var(--clr-text1);
     flex-grow: 1;
     font-size: var(--font-7);
@@ -1370,8 +1381,18 @@ select{
     
     background-color:#E5E5E5;
     font-size: var(--font-7);
-    padding: .5rem 1.5rem;
+    padding: .5rem 1rem;
     border-radius: 4px;
+    flex-shrink: 0;
+    
+}
+
+.details-tabs-container .tabs-content-container .details-item .form-wrap .upload-cv-wrap .fileup-btn .file-name {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 
@@ -2758,9 +2779,230 @@ background-color: #fff;
 
 /*------------- #portfolio-section --------------*/
 
-.portfolio-container{
+.portfolio-container .create-portfolio-wrap .create-portfolio-head{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+.portfolio-container .create-portfolio-wrap .create-portfolio-head > *{
+    
+    margin-bottom: 1rem;
     
     
+}
+
+.portfolio-container .create-portfolio-wrap .create-portfolio-head  .head-title{
+    
+    font-size: var(--font-5);
+    color: var(--clr-text2);
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.portfolio-container .create-portfolio-wrap .create-portfolio-head  .head-btn{
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    justify-content: center;
+    
+}
+.portfolio-container .create-portfolio-wrap .create-portfolio-head  .head-btn span{
+    
+    margin-right: 10px;
+}
+
+
+
+.portfolio-container .upload-portfolio-wrap{
+    
+    position: relative;
+    
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn{
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 250px;
+    margin: 0;
+    border: 1px dashed var(--clr-4);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all .3s ease;
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content{
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .valid{
+   
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content > img{
+    
+    display: block;
+    max-height: 100px;
+    text-align: center;
+    
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .content-text{
+    
+    font-size: var(--font-7);
+    color: var(--clr-text1);
+    font-weight: bold;
+    text-align: center;
+    transition: all .3s ease
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .content-text span{
+    
+    color: var(--clr-4);
+    transition:inherit ;
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .content-text span:hover{
+    
+    color: var(--clr-4-hover);
+    
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .content-text.small{
+    
+    font-size: 14px;
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .btn-content .content-text:first-of-type{
+    
+    margin-bottom: 5px;
+    margin-top: 1rem;
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+    
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded .uploaded-file-wrap{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: .5rem 1rem;
+    transition: all .3s ease;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border:1px solid #d0d0d0;
+    
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded .uploaded-file-wrap .uploaded-item{
+    
+    display: inline-block;
+    font-size: 16px;
+    transition:inherit ;
+    color: var(--clr-4);
+    padding: 3px 6px;
+    
+    
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded .uploaded-file-wrap button{
+    
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded .uploaded-file-wrap  .remove-file{
+    
+    border-right: 1px solid #aaa;
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn  .content-uploaded .uploaded-file-wrap  .remove-file:hover{
+    
+    color: darkred;
+    background: rgba(0,0,0,.05);
+}
+
+.portfolio-container .upload-portfolio-wrap .upload-portfolio-btn .content-uploaded .uploaded-file-wrap .file-name{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width:250px ;
+}
+
+
+.portfolio-container .portfolio-area .empty-area{
+    
+    color: var(--clr-text2);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: var(--font-4);
+    
+}
+
+.portfolio-container .portfolio-area .full-area .portfolio-item{
+    
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--clr-1);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+.portfolio-container .portfolio-area .full-area .portfolio-item:last-child{
+    
+    margin-bottom: 0;
+}
+
+.portfolio-container .portfolio-area .full-area .portfolio-item {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--clr-text2);
+    font-size: var(--font-7);
+    cursor: pointer;
+    transition: all .3s ease
+    
+}
+
+.portfolio-container .portfolio-area .full-area .portfolio-item:hover{
+    
+    color: var(--clr-4);
 }
 
 /*------------- #responsive --------------*/
@@ -3219,6 +3461,11 @@ background-color: #fff;
     .dashboard-boxes-container .dashboard-box-wrap  .box-body.centered-style .centered-wrap .empty-wrap{
         
         padding: 1rem;
+    }
+    
+    .portfolio-container .upload-portfolio-wrap .upload-portfolio-btn{
+        
+        min-height: 200px;
     }
     
 }
