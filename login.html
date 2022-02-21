@@ -29,11 +29,596 @@
 <body>
     
     
+    <!-- ***** header Start ***** -->
+    
+    <header class="top-nav " id="header">
+    
+        <div class="container h-100 ">
+        
+            <div class="navbar-content">
+            
+                <div class="logo">
+                    <div class="nav-toggler" id="nav-toggler">
+                 
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+                            <path class="line line2" d="M 20,50 H 80"></path>
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+                        </svg>
+                 
+                 </div>
+                    <a href="index.html">
+                        
+                        <img class="img-fluid d-none d-lg-block logo1" src="img/logo.svg">
+                        
+                        <img class="img-fluid d-block d-lg-none logo2"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA16SURBVHgB7Z0L0FVVFcfXx0vARxrKQ4w+EYlI0YrkoYI2Q5ma4zipmZWNaeUoY5E5mZLjTJORWZlKWg2l9FJMswDJIhLBDGNAxQhF+HASERBElDes/n/2vuNxn33v9zr7nPvYv5n/XDjfvee1zn6vtY5IJBKJRCKRSCQSiUQijUOTVCmq2hMffaEudtMuaGNTU9MuibSZqjIwjDoaH6dAY8QY96DEn/dA26BXoaXQXGhJNHhlCjUwDEoDngydA30cOkbaxxboAehR6O8w9kaJVAcw7onQT6EXtHPsgzZDf4VGQt0kUhwwwCHQRGhbK4bbDW2xxtts/727ld+8Bf0IerdE9pNrFY0b3wMfd0AXQ709X9kB/Qd6CFoFbebP7N+6QodBo6Cx0Al2mw9W25NRZf9XIvnAUgVNgXZ6St7rtoodB/VT04Mut5+e0BHQ2dBcW2p9/AVqlkh4cKMPhG4tUy3/C/pkJaNW2C+N/WloIbTXs+/fqunIRUKBG9wEXQxt1XR7ORMaKZ0Av+8OfdDua5+ma4avQF0lEgbc3GOgJzylazY0SDJCTeftcU9JXg6dKJHswY3tAt2o6XZ3fWdLbpnjjYb+6XmYbpdI9uDG9oWedm42q+rLQ1Wb2O+ZHgO/Ag2WSLao6RW7pXcJdJQEQk3H6znPQ3WFNCBdJCxnQz2cbY9BayUQGPtyLD1FzOJECfakT4GRD5AGI7SBT/VsewBG2CdhWQS95Gw7GuojDUYwA6O0cKbqSGfzXjE3PzRroOXONvbYG24KM2QJ5nKfWz235LG8h2NsFzPVuTexmcY9RBqM0FW0y27Jj/XO8XpJ+oGre/I2cJ6sk3wfqKokpIF5c9XZlue88E7P8RuOYAZGO/gyPl53Nh+Fzld/yQeOtZNVMnvue6XBCF1FL/ZsGy/5wAcp6d2xCdouDUZoAz8ipuQkOU8DL+Fh/+/Cx7HyTgOzRnlNGozQBl4o6VmrcVDo1R1OaCRXqtgWrxDjkdlQhDYwS8wsZxvHx59BKTtMwjHMqgTH3vPQL9gmkWyBIU+FXnIm/7kA8bmAK0oPOcdbqRmuPUcS4MZ2g76laVZB52dtZOxvuKZXsH4gkbDgJv9Z094WdKmZpB3wxypzDK4/3+ccI3p05AFu8knQYk9J5mL817IwMvbxRTX+0yXoRz1Zo+NdPqiJZlijfv5hH4LeHdz3cMe45Mlo3JzBDT+3gpGXqWmv27Wsh+8PVNMEJNkAfUwanEKCz1hS8XE3dLykoxMYRciIBEZAPCwmZHRPhX1xxuom6BKo5LHBILRroBlQCCMz4oITJ5xv32k/OUu2E+daVdOhhUUXwjBD8fEN6AIpv07LMFEaeTZu3CLPPmjc2+w+ktwI3QL1g1ZLOPjgcSKHS5MtVnw4OUW7wq5LNyZqHOJZtd6ildmuxonubugs6FA1zu7vg6Y536Uz/f1qpip5jGbNF44SGCjHnjv9vq+GjtWMRgk1BS56KHSdmvFwe3gM+rqacBUXRhb2TxwjbwP7WAvdAX0Yyn39PfcqWs3EBiMEb4BOE+NpUWKH/WzvE8+qku3tJFSL6xLHapZ0Fc1q82X7m/bA3jh9zDpipFK/4jac3y+kXsENPwj6tqbjlHaoiQbcv16sZuzKEvqqtg2GxhznOZ6vBNMvu9Nr0jwe9FHoy9A90Hw1U6JbWzlXNivDpN5QE6P0c2iXc8EboSugvs73GW56BjRVTahLJXZbw03QRIR/SAN7ro8P7wiIy6F/UNMW+2A7zRiqI6RewMUMghaoKaklOF88T81iRLcKv2XoKScxblDT/lYqIZwV+zE00P42NwM750xjM07qV/ac3KhH/v9B6L1S6+Aihml6dYfcq+2sqvD9w9X0TOeqP5C8BI/HkFJW98vzNnDifHtDn4KWes6R53+71nIPGyc/WE1bmjQGhzJTO3OT1YSKXgQ9peXzdqy1N5c1xOIiDGzPlcPBEzQdL0U4tXq61CI48V5q2lyX32d1g9WUaI6jV6sfdtImWCMvL8LA9jxp5NPU32n8o9ZagDpPGLpE06WLT3GmnQs10YQMLJvruXls616EzlEzB76+CAPb8+wBXe85R7bRx0ktYUvMSudCVvAploCoSfLyWpmbOAa6TE21nruB7fkdYB+4JHvUTNxUbVrJFGoSnLlcqyaNUsjjsm2e5Dk2byJXm9jp+klRBrbneKfn/NiU1caypprhgTsG5HRkbrG5ONY31T+c+qqa5qOwbHg49gWec2NHtL1pHNtEpnOjtoReJOkkolMxRbdT8mMa9LikfbKvhHpVWn7MAU6lbnC2cZLnQAlA1pPf7Cyw258sIc+KSRaaGzAgl++uk3QQ+BDoC1IsW6E3nG2s3YIsRGS90xFibmIJOpwz7e/zkjMw8tP4uMfzpwvVLicWhEo6KG4AdLAEIISBk6tD9HR4xubNKIL7xXhfJOH04FCpLuiQH8QTJGsDH+/8n9VR7qU3wf8kHQDHcfiRUhxdJH3fGRgXJOoiawO7N46dmQ1SHOzYuQ8Y534HFdiTZvPgJoMJFvmYtYHd/bGtCZ1Rpyy2575O0m0eH8SiDMzhUD9nGzuDWyQA9ZzCoQRrkGpyfmNqqeTDxYdvmZhSnDl5GLjo5bCqSfGvxt/7LGfzW9CCUNmHsjaw+1IMRik0S7EcLv7s8kVwuaTbX+bzWiiByNrAbvIx3tjC/I/ULKa7YaOsEl/Ie+iGc/kIPj7vbOYw8lacy5sSiKwNzMmF5HiO1eP4Aif3+YC939nGKjHXnr2dZ/4hNDyxmZ1POvXPklpBzeJ6izORzhihk6QAcNwhmn6nw2pohOSEPQf6X7mhs1w2HCe1hBoPixmei5mZ97jTrhrdpWke0Rz8oNQsTV6l6XVxUrsxy2rekeCWGnp2jJEcwfE+4KlNyJUSEDUelZeqcfzbUsa450qtosaFZoHnwphqf7TkAI4zQE1N4sJ16V6SAWo8JplRgI6Fo6xRH9bybr2MsZqjOftDB3ETwUUwEfgvxQxRSrBT8QR0HnqNQTs5OP7N+Lha0mExHKYsEZOovKOURgWHinlRF9dy3yOV0zQ+Cd0JzamL9yuqcTD7nqbbYjrBsT0+WgKA/R7MKrhMKZptS9sMW5o6qrbA79HBj+E4n1XjgF9fs4ZqOhmzPBdPoy9S8/KMzDpe9njTyhiXmQPomzxR84GOf4x0PF1NvFV9vjATF/YhNcb0wd7l99XE83SoV6vmtT197I1kCfU5wZfSNY3X9oeqdhTWVG+ouUY63dMXnEFq+2OFNUcPyuAHwsVwjfh66MIyX2F7/Gvob2Ii+te19k4HNQ8EX5PDoQZnh+gm5PPYZNb3q8T6hYnxNtlkj9PZuV8ej0t/9KXi9CPnmVtzYKerzs/E5PCcn4dvWC5PkppJ9snQl6T8vDCXy14UE7vLTkkLtFLeNgQ7MfTG4JtH6ZHBdnxAhf3xLaaXijEE832UJjfoI3a+dD5vJY1J4/ayn0xDwQeOfmlnQAPL/G6fPTZnsKbAyCulHlCT8W6smtDJtnZW2gvbd84QMYKAky5s/zY438kjupBNB4PuroEe1fKhpDw3Dq8yGbpVBWryctA/+TnNFj40dGpnUHZ3e6xCwkcT11rKQ8KwmXnqf0MqO2RMBFc/+bzUlGaWLgZLT7c3neEle7TtcLZstRqn8e+qyYHBgLemxHEKNbBzzZx84Szf8x5DvwndpAFKcuHxMGoi69iesu1iO8mbz9UXtp2cRGAbyyU+vh6A7TQnCthO09eK7Sy9NjeV2XezpHN0sIP1iWQujzzBOZ0pJj+JO3XL65oIzai2XFuZYas0pkhijBHTJXEqsL9VH7uNc73d27i/qinBiXPqaq9ntaYj/5+BRkmkbVSjgRPnNtaei8tvJEMawemuWnkKYkol1x+ayd4yewVfNHBBoJ2luw4XZJY5f+LkCadUJQuigQvEvkPid54/8dVDmQybooGL50FJv0CsWd4ZxNdhooGLh06AK5xtvvCWDhENXDyMuljjbGP1nElHKxq4eLj44PakOcmTScR/NHCdEw1c50QD1znRwMXji5/isOkVyYBo4OJhh8o1MIPRMgkIjwYuHr7n2J3U4FtbWyQDooELxM43+8JYWD1nEvEfDVwQ1rjM1eEz8JysIv6jgYuDnavLxHiKJmHbO10yIhq4AGzpPVmMW2/SO4WzWnPKuSB1hGjgnLHGZQAbfbUHO39mOqW7JEPqM2amCkks4NO4N0s6dwkdAO4T4/QfaQvV4pNF41pnQubS9kX8042W71zMPKd2LMEB8LjbMLMe45X5ltRmz0/+LSaMJfOc2tHAGZIwLPs2DA5nNTxBTCwUJzRcd192quh8xwC5ZyUA0cCdIGHQUgABMxrQqCPFvICTvlXlmgOW1vnQtSi5SyUQjWhgekswbKazmXaYf4v7YO4r9oaHWPW0xyj3AhJGLTDN8neg6TY7fTBq51UuHUD9oStFQv+r2dC9MOxMyYFYRYeH9TiHQH8S+7KQkKkLXaKBs4cGZWAbs80zdyff/jIXRi2kJokGbjvlQg0Yoc/UDFwBarH/p+gpuco6t0cikUgkEolEIpFIJBKJRCKRivwft3HtaTX5uEAAAAAASUVORK5CYII=" alt="">
+                    </a>
+                </div>
+                
+                <div class="pull-items">
+                    
+                    <ul class="navbar-menu" id="navbarMenu">
 
+                        <li class="menu-item mobile-item search-item">
+
+                            <div class="search-wrap">
+                            
+                                <form action="#">
+                            
+                                    <input type="search" class="form-control" placeholder="Search For ...">
+                                    
+                                    <button type="submit">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+
+                                </form>
+
+                            
+                            </div>
+                        </li>
+                        
+                        <li class="menu-item">
+
+                            <a class="menu-item-link " href="universities-page.html">Universities</a>
+
+                        </li>
+                        
+                        <li class="menu-item">
+
+                            <a class="menu-item-link " href="mentors.html">Mentoring</a>
+
+                        </li>
+                        <li class="menu-item">
+
+                            <a class="menu-item-link " href="#">Events</a>
+
+                        </li>
+                        <li class="menu-item">
+
+                            <a class="menu-item-link " href="#">Whiteboard</a>
+
+                        </li>
+                        <li class="menu-item">
+
+                            <a class="menu-item-link " href="#">About</a>
+
+                        </li>
+
+
+
+                    </ul>
+                    <div class="nav-additional ">
+
+                            <div class="login-btns  ">
+
+                                <a class="btn-style login-btn " href="login.html">Log in</a>
+
+                            </div>
+                            <div class="logined-items d-none ">
+
+                                <div class="logined-item messages-item form-check-small" data-target="messages-dropdown">
+
+                                    <a class="item-link h-menu " href="#">
+                                        
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"/></svg>
+                                        
+                                       <span class="counter">5</span>
+
+                                    </a>
+                                    <div class="dropdown-list duplicated-dropdown messages-dropdown">
+
+                                        <div class="dropdown-items">
+
+                                             <div class="dropdown-head">
+
+                                                 <div class="dropdown-title"> Messages </div>
+                                                 <div class="dropdown-head-actions dropstart d-none">
+                                     
+                                                      <a class="head-actions-btn" href="#" role="button" id="headActionsmenu" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                                          <i class="fa-solid fa-ellipsis"></i>
+
+                                                      </a>
+
+                                                      <ul class="dropdown-menu actions-menu head-actions-menu width-lg" aria-labelledby="headActionsmenu" style="">
+                                                          
+                                                        <li class="has-padding">
+                                                        
+                                                            <div class="form-check">
+                                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                                              <label class="form-check-label" for="flexCheckDefault1">
+                                                                 Receive Email notifications
+                                                              </label>
+                                                            </div>
+                                                          
+                                                        </li>
+                                                        
+                                                      </ul>
+
+                                                </div>
+                                                 
+                                                 
+                                             </div>
+                                             <ul class="dropdown_list list-scrollbar">
+                                                 
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">2 mins ago</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post  
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post  
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                
+
+                                             </ul>
+                                             <div class="dropdown-footer">
+                                            
+                                                 <a href="notifications.html">
+                                                 
+                                                     View All
+                                                     <span><i class="fa-solid fa-chevron-right"></i></span>
+                                                    
+                                                 </a>
+                                            
+                                                 
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    
+                                </div>
+                                
+                                <div class="logined-item notifications-item form-check-small" data-target="notifications-dropdown">
+
+                                    <a class="item-link h-menu" href="#">
+
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"/></svg>
+                                        
+                                    </a>
+                                    <div class="dropdown-list duplicated-dropdown notifications-dropdown ">
+
+                                        <div class="dropdown-items">
+
+                                             <div class="dropdown-head">
+
+                                                 <div class="dropdown-title"> Notifications </div>
+                                                 <div class="dropdown-head-actions dropstart">
+                                     
+                                                      <a class="head-actions-btn" href="#" role="button" id="headActionsmenu" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                                          <i class="fa-solid fa-ellipsis"></i>
+
+                                                      </a>
+
+                                                      <ul class="dropdown-menu actions-menu head-actions-menu width-lg" aria-labelledby="headActionsmenu" style="">
+                                                          
+                                                        <li class="has-padding">
+                                                        
+                                                            <div class="form-check">
+                                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                              <label class="form-check-label" for="flexCheckDefault">
+                                                                 Receive Email notifications
+                                                              </label>
+                                                            </div>
+                                                          
+                                                        </li>
+                                                        
+                                                      </ul>
+
+                                                </div>
+                                                 
+                                                 
+                                             </div>
+                                             <ul class="dropdown_list list-scrollbar">
+                                                 
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post  
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post  
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                 <li class="list-item">
+                                                 
+                                                     <div class="list-item-content">
+                                                     
+                                                         <div class="item-icon">
+                                                         
+                                                             <img class="img-fluid" src="img/profile.svg">
+                                                         
+                                                         </div>
+                                                         <div class="item-content">
+                                                         
+                                                             <p class="content-text">
+                                                             
+                                                                 Update Post   Update Post  Update Post  Update Post
+                                                                  <a href="#">visit link</a>
+                                                                
+                                                             </p>
+                                                             <div class="content-time">
+                                                             
+                                                                 <svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                                                                 <span id="time">14 days</span>
+                                                                
+                                                             </div>
+                                                             
+                                                         </div>
+                                                        
+                                                     </div>
+                                                        
+                                                 </li>
+                                                
+
+                                             </ul>
+                                             <div class="dropdown-footer">
+                                            
+                                                 <a href="notifications.html">
+                                                 
+                                                     View All
+                                                     <span><i class="fa-solid fa-chevron-right"></i></span>
+                                                    
+                                                 </a>
+                                            
+                                                 
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                
+                                <div class="logined-item acoount-item form-check-small" data-target="acoount-dropdown">
+
+                                    <a class="item-link h-menu" href="#">
+
+                                        <img class="img-fluid" src="img/profile.svg">
+
+                                    </a>
+                                    <div class="dropdown-list acoount-dropdown  ">
+
+                                        <div class="dropdown-items">
+
+                                            <div class="u-info">
+                                        
+                                            <div class="u-img" id="u_img">
+                                            
+                                                <img class="img-fluid" src="img/profile.svg">
+                                            
+                                            </div>
+                                            <div class="u-email" id="u_email">
+                                            
+                                                <h6>user name</h6>
+                                                <p>useremail@gmail.com</p>
+                                                
+                                            </div>
+                                        </div>
+                                            <div class="user-list">
+                                 
+                                                <a href="portfolio.html" class="user-list-item">
+                                            
+                                                    <span><i class="fa-solid fa-user"></i></span>
+                                                    Profile
+                                            
+                                                </a>
+                                                <a href="#" class="user-list-item">
+                                            
+                                                    <span><i class="fa-solid fa-gear"></i></span>
+                                                    settings
+                                            
+                                                </a>
+                                                <a href="#" class="user-list-item">
+                                            
+                                                    <span><i class="fa-solid fa-power-off"></i></span>
+                                                    Log out
+                                            
+                                                </a>
+                                            
+                                 
+                                 
+                                 
+                                        </div>    
+                                            
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>   
+                
+            </div>
+        
+        </div>
+        
+        <div class="overlay-panel" id="overlayPanel"></div>
     
+    </header>
     
-    <!-- ***** login section Start ***** -->
+    <!-- ***** header End ***** -->
     
+
+    <div class="page-container">
+    
+        <!-- ***** login section Start ***** -->
     
         <section class="section-style login-section sign-section p-3-3">
     
@@ -165,10 +750,9 @@
     
         </section>
     
+        <!-- ***** login section End ***** -->
     
-    <!-- ***** login section End ***** -->
-    
-    
+    </div>
     
     
     

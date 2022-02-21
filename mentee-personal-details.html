@@ -22,6 +22,8 @@
         
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
         
     
@@ -33,9 +35,9 @@
     
 
     
-    
-    <!-- ***** mentee-details-section Start ***** -->
-    
+    <div class="page-container">
+        
+        <!-- ***** mentee-details-section Start ***** -->
     
         <section class="section-style wizerd-section mentee-details-section p-3-3 wave-section">
     
@@ -147,7 +149,7 @@
                                         
                                             
                                                 <label for="" class="form-label">Birthday </label>
-                                                <input type="date" class="form-control">
+                                                <input type="date" class="form-control ">
 
                                         
                                         </div>
@@ -516,9 +518,9 @@
             <img  class="img-fluid wave-vector d-none" src="img/wave-left.svg">
         </section>
     
-    
-    <!-- ***** mentee-personal-details-section End ***** -->
-    
+        <!-- ***** mentee-personal-details-section End ***** -->
+        
+    </div>
     
     
     
@@ -534,13 +536,18 @@
     
     <!-- select2 plugin   -->
     <script src="js/select2.min.js"></script>
-           
+    
+    <!-- flatpickr plugin not fixed script   -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <!-- main style js   -->
     <script src="js/main.js"></script>
    
     <script>
     
         $('.select2_multiple select').select2();
+        
+        $(' input[type="date"] ').flatpickr();
         
     
     </script>

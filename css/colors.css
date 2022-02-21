@@ -1,6 +1,6 @@
 :root{
     
-     --clr-1:#98A59B;
+     --clr-1:#98a59b ;
     
      --clr-2:#B3FFE8;
      --clr-2-hover:#93d4c0;
@@ -13,9 +13,16 @@
      --clr-5:#BDE6E3;
      --clr-5-hover:#93cac6;
     
+     --clr-6:#516654;
+    
+     --clr-7:#d0e2cf;
+    
      --clr-text1:#71717A;
      --clr-text2:#979797;
     
-     --clr-input-border:#63C797;
+     --clr-input-border:#ced4da;
+     --clr-input-border2:#63C797;
+    
+     --clr-border:#dedede;
     
 }
