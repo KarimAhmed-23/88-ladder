@@ -18,9 +18,9 @@ $('a[href="#"]').click(function ($) {
 $(window).scroll(function() {
           
         if ($(this).scrollTop() > 0) {
-            $('#header').addClass("scroll")
+            $('#header:not(.no-scroll)').addClass("scroll")
         } else {
-            $('#header').removeClass("scroll")
+            $('#header:not(.no-scroll)').removeClass("scroll")
 
         }
     });

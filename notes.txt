@@ -13,3 +13,5 @@ pages
 6- Mentor Profile Page
 
 7- Join Waitlist  
+
+8- landing page ---> one item responsive
