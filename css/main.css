@@ -7,6 +7,9 @@
 /*------------- #general --------------*/
 
 
+
+@import url('https://fonts.cdnfonts.com/css/oxygen');
+
 @import url("font-size.css");
 
 @import url("colors.css");
@@ -1733,7 +1736,7 @@ input[type="radio"]:checked{
 footer{
     
     padding: 3rem 0  0;
-    margin-top: 3rem;
+    margin-top: 0rem;
     position: relative;
     background-color: var(--clr-6);
     
@@ -2621,7 +2624,7 @@ footer .copy-rights p a:hover{
     
     position: relative;
     background: #FFFFFF;
-    color: var(--clr-text1);
+    color: var(--clr-text2);
     padding: 2rem 1.5rem;
     height: calc(100% - 100px);
     padding: 1rem .5rem;
@@ -2651,6 +2654,7 @@ footer .copy-rights p a:hover{
     text-align: center;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    color: var(--clr-text1);
 }
 
 .dashboard-boxes-container .dashboard-box-wrap  .box-body .box-body-title span{
@@ -3061,7 +3065,7 @@ footer .copy-rights p a:hover{
     
     margin-bottom: 0;
     font-size: 18px;
-    color: var(--clr-text2);
+    color: var(--clr-text1);
     text-transform: capitalize;
     margin-bottom: .75rem;
     font-weight: bold;
@@ -3372,13 +3376,13 @@ background-color: #fff;
 .universities-area .university-box .university-details .details-row .row-item .item-text{
     
     margin-bottom: 8px;
-    color: var(--clr-tex2);
+    color: var(--clr-text2);
     font-size: 16px;
 }
 .universities-area .university-box .university-details .details-row .row-item .item-title{
     
     font-weight: bold;
-    
+     color: var(--clr-text1);
     
 }
 
@@ -3397,7 +3401,7 @@ background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #37474F;
+    border: 1px solid var(--clr-border);
     box-sizing: border-box;
     border-radius: 8px;
     padding: .375rem 1.5rem;
@@ -3406,6 +3410,7 @@ background-color: #fff;
     min-width: 140px;
     max-width: 240px;
     font-size: 16px;
+    color: var(--clr-text1);
 }
 
 .universities-area .university-box .university-details .details-row.footer .row-item .item-title{
@@ -3534,7 +3539,7 @@ background-color: #fff;
     
     margin-bottom: 3rem;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     
 }
 
@@ -3549,8 +3554,8 @@ background-color: #fff;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     border-radius: 100%;
     border: 1px solid var(--clr-4);
     color:var(--clr-4) ;
@@ -3570,8 +3575,9 @@ background-color: #fff;
 .university-veiw-container .university-breadcrumb .university-name{
     
     display: inline-block;
-    color: var(--clr-text2);
+    color: var(--clr-text1);
     font-size: var(--font-5);
+    font-weight: bold;
 }
 
 .university-veiw-container .university-actions-wrap{
@@ -3824,14 +3830,14 @@ background-color: #fff;
     color: var(--clr-text2);
     font-size: 16px;
     margin-bottom: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .university-veiw-container .university-details-container .details-row .details-p.details-title{
     
     font-weight: bold;
-    font-size: 18px;
-    
+    font-size: var(--font-5);
+    color: var(--clr-text1);
 }
 
 .university-veiw-container .university-details-container .details-row .details-p.details-text{
@@ -3974,7 +3980,7 @@ background-color: #fff;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
-    
+    color: var(--clr-text1);
 }
 
 .mentors-area .mentors-wrap .mentor-box .mentor-more{
@@ -4096,7 +4102,7 @@ background-color: #fff;
 .portfolio-container .create-portfolio-wrap .create-portfolio-head  .head-title{
     
     font-size: var(--font-5);
-    color: var(--clr-text2);
+    color: var(--clr-text1);
     font-weight: bold;
     margin-right: 1.5rem;
 }
@@ -4488,6 +4494,319 @@ background-color: #fff;
 }
 
 
+/*------------- #events-section --------------*/
+
+.events-container .event-wrap  {
+    
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.events-container  .event-box{
+    
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+    max-width: 650px;
+    margin: auto;
+}
+
+.events-container  .event-box .event-img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.events-container  .event-box .event-img img{
+    
+    display: block;
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+    
+}
+.events-container  .event-box .box-body{
+    
+    position: relative;
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 6%), 0px 1px 3px rgb(0 0 0 / 10%);
+    padding: 1rem;
+    text-align: center;
+    height: calc(100% - 250px);
+    
+}
+
+.events-container  .event-box .box-body .event-title{
+    
+    display: inline-block;
+    font-size: 18px;
+    color: var(--clr-text1);
+    margin-bottom: 4px;
+    font-weight: bold;
+    transition: all .3s ease
+    
+}
+.events-container  .event-box .box-body .event-title:hover{
+    color: var(--clr-4)
+}
+.events-container  .event-box .box-body .event-info{
+    
+    font-size: 14px;
+    margin-bottom: 0;
+    color: var(--clr-text1);
+    font-weight: bold;
+}
+
+.events-container  .event-box .box-body .event-text{
+    
+    font-size: 16px;
+    color: var(--clr-text2);
+    margin-bottom: 0;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+
+/*------------- #event-veiw-section --------------*/
+
+.breadcrumb-back{
+    
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.breadcrumb-back .breadcrumb-icon{
+    
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+.breadcrumb-back .breadcrumb-icon .back-link{
+    
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    border: 1px solid var(--clr-4);
+    color:var(--clr-4) ;
+    background-color: #fff;
+    font-size: 20px;
+    transition: all .3s ease
+}
+
+.breadcrumb-back .breadcrumb-icon .back-link:hover{
+    
+    background-color: var(--clr-4);
+    color:#fff ;
+}
+.breadcrumb-back .breadcrumb-text{
+    
+    display: inline-block;
+    color: var(--clr-text1);
+    font-size: var(--font-5);
+    font-weight: bold;
+}
+
+.event-veiw-container .event-banner{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.event-veiw-container .event-banner img{
+    
+    display: block;
+    max-height: 300px;
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event-veiw-container .event-area .event-box{
+    
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--clr-border);
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+.event-veiw-container .event-area .event-box:last-child{
+    
+    margin-bottom: 0;
+}
+
+.event-veiw-container .event-area  .event-info{
+    
+    padding-bottom: .5rem;
+}
+.event-veiw-container .event-area  .event-info .info-row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.event-veiw-container .event-area  .event-info .info-row > div{
+    
+    padding-bottom: 1rem;
+}
+
+.event-veiw-container .event-area  .event-info .info-row .info-item {
+    
+    padding-right: 1.5rem;
+}
+.event-veiw-container .event-area  .event-info .info-row .info-item .event-name{
+    
+    font-size: var(--font-5);
+    color: var(--clr-text1);
+    font-weight: bold;
+    margin-bottom: 4px;
+    
+}
+.event-veiw-container .event-area  .event-info .info-row .info-item .event-speaker{
+    
+    font-size: 16px;
+    color: var(--clr-text2);
+    
+}
+.event-veiw-container .event-area  .event-info .info-row .info-item .event-speaker span{
+    
+    font-weight: bold;
+}
+
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap{
+    
+    flex-shrink: 0;
+}
+
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-btn{
+    
+    padding: .5rem 1.5rem;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action .register-done{
+    
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--clr-text1);
+    margin-right: 1.5rem;
+    text-transform: capitalize;
+}
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action .register-done span{
+    
+    margin-left: 6px;
+}
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action .register-done i{
+    
+    color: var(--clr-4);
+    vertical-align: middle;
+}
+
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action .cancel-btn{
+    
+    display: inline-block;
+    color: var(--clr-4);
+    font-size: 18px;
+    transition: all .3s ease;
+    text-transform: capitalize;
+    
+}
+
+.event-veiw-container .event-area  .event-info .info-row .event-register-wrap .register-action .cancel-btn:hover{
+    
+    color: var(--clr-4-hover);
+}
+
+.event-veiw-container .event-area .event-details .details-item h1{
+    
+    font-size: 18px;
+    color: var(--clr-text1);
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.event-veiw-container .event-area .event-details .details-item p{
+    
+    font-size: 16px;
+    color: var(--clr-text2);
+    text-align: justify;
+    margin-bottom: .5rem;
+}
+.event-veiw-container .event-area .event-details .details-item p:last-child{
+    
+    margin-bottom: 0;
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap{
+    
+    padding: 1rem;
+    background-color: #F8F8F8;
+    border: 1px solid var(--clr-border);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap:last-child{
+    
+    margin-bottom: 0;
+}
+
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-title{
+    
+    font-size: 18px;
+    color: var(--clr-text1);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item{
+    
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--clr-text2);
+    margin-bottom: 0.25rem;
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item:last-child{
+    
+    margin-bottom: 0;
+}
+
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item > span{
+    
+     display: inline-flex;
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item .icon{
+    
+    margin-right: 8px;
+   
+}
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item .icon i,
+.event-veiw-container .event-area .event-details .details-boxes .box-wrap .box-content .details-item .icon svg{
+    
+    width: 16px;
+    height: 16px;
+    fill:var(--clr-text2);
+}
+
+.related-events-container .events-title{
+    
+    font-size: var(--font-3) !important;
+    text-transform: capitalize;
+}
 
 /*------------- #responsive --------------*/
 
@@ -4787,7 +5106,21 @@ background-color: #fff;
     }
     
     
+    .events-container  .event-box .box-body{
     
+        
+        height: auto;
+    
+    }
+    .event-veiw-container .event-area .event-info .info-row{
+        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .event-veiw-container .event-area .event-info .info-row .info-item{
+        
+        padding-right: 0;
+    }
     
 }
 
@@ -5088,8 +5421,18 @@ background-color: #fff;
     
     
    
+    .events-container  .event-box .event-img img{
+        
+        height: 200px;
+        max-height: 200px;
+    }
     
-
+    .breadcrumb-back .breadcrumb-icon .back-link,
+    .university-veiw-container .university-breadcrumb .breadcrumb-icon .back-link{
+        
+        width: 30px;
+        height: 30px;
+    }
     
 }
 

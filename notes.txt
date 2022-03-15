@@ -1,17 +1,15 @@
 pages 
 
-1- Events
 
-2- Whiteboard
+
+1- Whiteboard
 
 3- About
 
-4- Common Questions
+3- Common Questions
 
-5- Scholarships
+4- Scholarships
 
-6- Mentor Profile Page
+5- Mentor Profile Page
 
-7- Join Waitlist  
-
-8- landing page ---> one item responsive
+6- landing page ---> one item responsive
